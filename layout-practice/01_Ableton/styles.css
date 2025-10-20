@@ -1,0 +1,534 @@
+@font-face {
+  font-family:'futura-pt';
+  font-style:normal;
+  font-weight:normal;
+  src:url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book.325fc4671f06.eot);
+  src:url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book.325fc4671f06.eot?#iefix) format("embedded-opentype"),
+  url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book.2dadbb3c03c1.woff2) format("woff2"),
+  url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book.b65339f98771.woff) format("woff"),
+  url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book.187839f67492.ttf) format("truetype"),
+  url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book.60a93019c94b.svg#FuturaPTWeb-Book) format("svg")
+}
+@font-face {
+  font-family:'futura-pt';
+  font-style:italic;
+  font-weight:normal;
+  src:url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book-oblique.bd17c4c4318c.eot);
+  src:url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book-oblique.bd17c4c4318c.eot?#iefix) format("embedded-opentype"),
+  url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book-oblique.f859db99cda9.woff2) format("woff2"),
+  url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book-oblique.f4ebda52fb60.woff) format("woff"),
+  url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book-oblique.7c52132fafab.ttf) format("truetype"),
+  url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book-oblique.5d67d07177c0.svg#FuturaPTWeb-Book) format("svg")
+}
+@font-face {
+  font-family:'futura-pt';
+  font-style:normal;
+  font-weight:bold;
+  src:url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-medium.5201fc3a314d.eot);
+  src:url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-medium.5201fc3a314d.eot?#iefix) format("embedded-opentype"),
+  url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-medium.b650e9c2aaf6.woff2) format("woff2"),
+  url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-medium.038ac2935219.woff) format("woff"),
+  url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-medium.c056901ef82f.ttf) format("truetype"),
+  url(https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-medium.3bb7659593c8.svg#FuturaPTWeb-Book) format("svg")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 1rem;
+    font-weight: normal;
+    color: #000;
+    line-height: 1.5;
+    font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+nav {
+    padding: 1.25rem 2.5rem;
+}
+
+.logo{
+    position: absolute;
+    display: block;
+    width: 3.75em;
+    height: 1.75em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0.625rem;
+    padding: 0 0.625rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+}
+
+.top-nav-links {
+    padding: 0 0 0 5.25rem;
+    font-size: 1.25rem;
+}
+
+.is-active {
+    color: #FF764D;
+}
+
+.try {
+    color: blue;
+    margin-left: auto;
+}
+
+.try a {
+    color: inherit;
+}
+
+.nav-separator {
+    display: block;
+    height: 0;
+    border-top: 2px solid #eee;
+}
+
+.about-page-header{
+    position: relative;
+    margin: 0 133.33333px 133.33333px;
+    min-height: calc(100vh - 120px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("./images/header.jpg");
+}
+
+.main-section-logo{
+    width: 430px;
+    height: 104px;
+    margin-left: -215px;
+    margin-top: -52px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.about-page-text{
+    width: 800px;
+    margin: 0 auto 133.33333px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.875rem;
+    line-height: 1.4;
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: common-ligatures;
+    font-feature-settings: "kern";
+    font-kerning: normal;
+    margin-bottom: .7em;
+    font-weight: bold;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+.about-page-collage {
+    position: relative;
+    padding: 133.33333px 0;
+    margin-bottom: 133.33333px;
+}
+
+.collage-background-1{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    height: 933.33333px;
+    width: 933.33333px;
+    left: 666.66667px;
+    background-color: #FBFFA7 !important;
+}
+
+.collage-picture-1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("./images/photo-1.jpg");
+    width: 666.66667px;
+    height: 666.66667px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    margin-left: 133.33333px;
+}
+
+.collage-picture-2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("./images/photo-2.jpg");
+    height: 400px;
+    width: 533.33333px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    margin-left: 133.33333px;
+}
+
+.about-page-media-conteiner{
+    width: 800px;
+    margin: 0 auto 133.33333px;
+}
+
+.about-page-media-conteiner{
+    overflow: hidden;
+    position: relative;
+}
+
+.about-page-media{
+    position: relative;
+    padding-bottom: 56.6%;
+}
+
+.about-page-media a{
+    position: absolute;
+}
+
+.play-button-conteiner{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.play-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.25rem;
+    width: 6.25rem;
+    border-radius: 50%;
+    background-color: blue;
+    z-index: 1;
+    padding: 0;
+}
+
+.play-button svg{
+    position: absolute;
+    top: 2.0625rem;
+    left: 2.4375rem;
+    width: 1.875rem;
+    height: 2.125rem;
+    color: white;
+}
+
+polygon{
+    width: 100%;
+    height: 100%;
+}
+
+figcaption {
+    font-size: .875rem;
+}
+
+.collage-background-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 1333.33333px;
+    width: 933.33333px;
+    background-color: #B6FFC0 !important;
+}
+
+.collage-2-conteiner{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    margin-left: 133.33333px;
+}
+
+.collage-picture-3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("./images/photo-3.jpg");
+    height: 480px;
+    width: 533.33333px;
+}
+
+.collage-picture-4{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("./images/photo-4.jpg");
+    height: 480px;
+    width: 533.33333px;
+    margin-top: 133.33333px;
+}
+
+.collage-picture-5{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("./images/photo-5.jpg");
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    height: 666.66667px;
+    width: 666.66667px;
+    margin-left: 133.33333px;
+}
+
+.poster{
+    margin: 0 133.33333px 133.33333px;
+    width: auto;
+}
+
+.poster img{
+    height: auto;
+    max-width: 100%;
+    border: 0;
+}
+
+.collage-background-3{
+    position: absolute;
+    top: 0;
+    left: 266.66667px;
+    z-index: 0;
+    margin: auto;
+    height: 933.33333px;
+    width: 1066.66667px;
+    background-color: #D5B3FF !important;
+}
+
+.collage-picture-6{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("./images/photo-6.jpg");
+    margin-left: 133.33333px;
+    height: 400px;
+    width: 533.33333px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+.collage-picture-7{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("./images/photo-7.jpg");
+    margin-left: 262.6666px;
+    height: 666.66667px;
+    width: 666.66667px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+.job-teaser{
+    display: flex;
+}
+
+.job-teaser-picture{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("./images/photo-8.jpg");
+    height: 666.66667px;
+    width: 666.66667px;
+    margin-left: 133.33333px;
+}
+
+.job-teaser-text{
+    padding: 133.33333px;
+    height: 666.66667px;
+    width: 666.66667px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #B1C5FF !important;
+}
+
+.job-teaser-text a{
+    display: block;
+    margin-top: 1em;
+    color: blue;
+    text-decoration: none;
+}
+
+.has-arrow::after{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 0.3em;
+    height: 0.3em;
+    margin-left: 0.1em;
+    content: '';
+    border-style: solid;
+    border-width: 0.09em 0.09em 0 0;
+    transform: rotate(50deg) skew(10deg) translateY(-50%);
+}
+
+.footer-separator {
+    padding-top: 133.33333px;
+    position: relative;
+    font-size: 1.25rem;
+    font-size: normal;
+}
+
+.footer-separator::after {
+    content: "";
+    display: block;
+    height: 0;
+    border-top: 2px solid #efefef;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.footer-main {
+    padding: 133.33333px;
+}
+
+.footer-main ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.footer-main ul li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-name{
+    width: 188px;
+    height: auto;
+    max-width: 212%;
+    border: 0;
+    padding-bottom: 4.16667vw;
+}
+
+.footer-row-1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer-main h3{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.footer-input{
+    font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: inherit;
+    width: 100%;
+    margin: 0;
+    padding: .4em .75em;
+    background: transparent;
+    background-color: #eee;
+    border: 0;
+    user-select: none;
+    font-weight: normal;
+    border-radius: 0;
+}
+.footer-sign-up{
+    width: 40%;
+}
+
+.sign-up-btn{
+    display: inline-block;
+    margin: 0;
+    padding: .35em 1.5em;
+    font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: inherit;
+    color: #fff !important;
+    background: blue;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.footer-sign-up-inputs{
+    display: flex;
+}
+
+.footer-education{
+    width: 30%;
+}
+
+.footer-links-list{
+    width: 30%;
+}
+
+.socials li{
+    display: inline-block;
+    margin: .75em .75em 0 0;
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer-row-2{
+    margin: 66.66667px 0;
+}
+
+.community{
+    width: 30%;
+}
+
+.footer-end-links{
+    padding-bottom: 133.33333px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .875rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.footer-end-links ul li{
+    list-style: none;
+    float: left;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+.footer-made-in-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.footer-made-in-logo span{
+    margin-right: 1em;
+}
+
+.footer-logo{
+    width: 3.75em;
+    height: 1.75em;
+}
