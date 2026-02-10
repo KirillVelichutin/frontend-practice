@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'Sentient-Extralight';
+    src: url(fonts/sentient/Sentient-Extralight.otf);
+}
+
+@font-face {
+    font-family: 'Sentient-ExtralightItalic';
+    src: url(fonts/sentient/Sentient-ExtralightItalic.otf);
+}
+
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url(fonts/Manrope/static/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url(fonts/Manrope/static/Manrope-Regular.ttf);
+}
+
+:root {
+    --section-margin: 0 2.5vw;
+    --elements-border-radius: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF0F7;
+    font-size: 16px;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/header_back.png);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(90%);
+    z-index: -1;
+}
+
+header {
+    height: 100vh;
+    padding: var(--section-margin);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 50px;
+    height: 58px;
+    margin: 3vh auto;
+    padding: 0 15px;
+}
+
+nav > svg {
+    position: absolute;
+    right: 45%;
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li svg{
+    margin-bottom: -5px;
+}
+
+.italicized {
+    font-family: 'Sentient-ExtralightItalic';
+}
+
+.logo {
+    width: 768px;
+    margin: 17vh auto;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Sentient-Extralight';
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.shop-our-fragrancies {
+    font-family: 'Manrope-Bold';
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 0.7em 1.4em;
+    border-radius: 50px;
+    transition: background-color 200ms;
+}
+
+.shop-our-fragrancies:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.as-seen-in p {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Manrope-Bold';
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.as-seen-in ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.featured-fragrances-section {
+    padding: var(--section-margin);
+}
+
+.featured-fragrances-section h2 {
+    font-family: 'Sentient-Extralight';
+    font-size: 2.5rem;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+}
+
+.parfum-cards-conteiner {
+    display: flex;
+    gap: 5%;
+    margin: auto;
+}
+
+.parfum-card {
+    position: relative;
+    text-align: center;
+}
+
+.parfum-card img {
+    width: 100%;
+    border-radius: var(--elements-border-radius);
+}
+
+.parfum-card p {
+    margin-top: 0.7rem;
+}
+
+.on-sale {
+    position: absolute;
+    top: 0.2em;
+    right: 1em;
+    background-color: #E8A94C;
+    font-family: 'Manrope-Bold';
+    font-size: 0.8rem;
+    padding: 0.7em 1.4em;
+    border-radius: 50px;
+}
+
+.shop-now {
+    background-color: #ABB249;
+    display: block;
+    width: 100%;
+    font-family: 'Manrope-Bold';
+    font-size: 0.8rem;
+    padding: 0.8em 1.4em;
+    border-radius: 50px;
+    margin-top: 0.7rem;
+    transition: background-color 200ms;
+}
+
+.shop-now:hover {
+    background-color: #abb24900;
+}
+
+
+.smell-like-dream-section {
+    height: 98vh;
+    padding: var(--section-margin);
+    display: flex;
+    margin-top: 23vh;
+}
+
+.smell-like-dream-image-conteiner {
+    width: 45%;
+    height: 100%;
+    border-radius: var(--elements-border-radius);
+    background-image: url(images/flower.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.smell-like-dream-text-conteiner {
+    width: 55%;
+    text-align: center;
+    width: 368px;
+    margin: auto;
+}
+
+.smell-like-dream-text-conteiner h3 {
+    font-family: 'Sentient-Extralight';
+    font-size: 2rem;
+}
+
+.smell-like-dream-text-conteiner p {
+    font-family: 'Manrope-Regular';
+    margin: 10% 0;
+}
+
+.created-for-everyone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Sentient-Extralight';
+    font-size: 2.5rem;
+    background-color: #E8A94C;
+    padding: 1rem 0;
+    margin: 10vh 0;
+}
+
+.save-for-you-section {
+    height: 97vh;
+    padding: var(--section-margin);
+    display: flex;
+    margin-top: 23vh;
+}
+
+.save-for-you-image-conteiner {
+    width: 50%;
+    height: 100%;
+    border-radius: var(--elements-border-radius);
+    background-image: url(images/hand.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.save-for-you-text-conteiner {
+    width: 50%;
+    margin: auto;
+}
+
+.save-for-you-text-conteiner h4 {
+    font-family: 'Sentient-Extralight';
+    font-size: 40px;
+    margin-bottom: 1.2em;
+}
+
+.save-for-you-grid {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 10%;
+    text-align: left;
+    padding-right: 5%;
+}
+
+.svg-conteiner {
+    background-color: #E8A94C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.save-for-you-principle {
+    font-family: 'Manrope-Bold';
+    margin-bottom: 1em;
+}
+
+.save-for-you-description {
+    font-family: 'Manrope-Regular';
+    font-size: 16px;
+}
+
+.everyone-enchanted-section {
+    padding: var(--section-margin);
+    margin: 10vh 0;
+    text-align: center;
+}
+
+.everyone-enchanted-section h5 {
+    font-family: 'Sentient-Extralight';
+    font-size: 2rem;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+.comments-conteiner {
+    display: flex;
+    gap: 5%;
+}
+
+.comment-card {
+    background-color: #ffffff;
+    border-radius: var(--elements-border-radius);
+    padding: 2rem;
+    text-align: left;
+}
+
+.comment-card > p {
+    margin: 1.5vw 0;
+}
+
+.comment-author-conteiner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.comment-author-details p:nth-child(1) {
+    font-family: 'Sentient-Extralight';
+    font-size: 1.2rem;
+}
+
+.comments-btn {
+    padding: 0.7rem;
+    margin: 5vh 0.3vw;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 200ms;
+}
+
+.comments-btn:hover {
+    background-color: #e4e4e4;
+}
+
+footer {
+    margin: var(--section-margin);
+    margin-bottom: 2.5vw;
+    padding: var(--section-margin);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: #DD6249;
+    border-radius: var(--elements-border-radius);
+    color: #FFFFFF;
+}
+
+.footer-upper {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Sentient-Extralight';
+}
+
+.footer-email-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-email-section p {
+    font-size: clamp(0.7rem, 3vw, 2rem);
+}
+
+.footer-email-section p span{
+    font-weight: bold;
+}
+
+.email-input {
+    border: none;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    padding: 0 1vw;
+    font-size: 1.1rem;
+    font-family: 'Manrope-Regular';
+    width: 366px;
+    height: 38px;
+}
+
+.subscribe-btn {
+    margin-left: 0.2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    width: 120px;
+    height: 38px;
+    text-align: center;
+    font-family: 'Manrope-Regular';
+    font-size: 1rem;
+    transition: background-color 200ms;
+}
+
+.subscribe-btn:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 538px;
+    flex: 1;
+}
+
+.footer-links p {
+    font-size: clamp(0.5rem, 2vw, 1.3rem);
+}
+
+.footer-links > div ul {
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.footer-links > div ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links > div ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+}
+
+.footer-links > div ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-parfum {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin: 10vh 0;
+}
+
+.footer-lower {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Manrope-Regular';
+}
