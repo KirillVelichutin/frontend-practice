@@ -526,6 +526,7 @@ figcaption  {
     }
 }
 
+@media screen and (max-width: 850px) {
     .about-page-media-conteiner {
         width: 100%;
     }
