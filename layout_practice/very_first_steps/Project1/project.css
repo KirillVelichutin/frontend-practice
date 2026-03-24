@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 30px 40px;
+    width: 100%;
+    gap: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    background-color: gray;
+    width: 300px;
+    border-radius: 100px;
+    padding: 4px;
+}
+
+.navbar > div {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 100px;
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.navbar > div a {
+    font-family: "Neue Montreal Regular", serif;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 13px;
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.2em;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+    height: 70vh;
+    gap: 40px;
+    flex-direction: column;
+}
+
+article > div {
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+article > div h1 {
+    font-size: 72px;
+    font-family: "Neue Montreal Regular", serif;
+    font-weight: 400;
+    letter-spacing: -.2px;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+/*.articleElements {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    padding: 0;
+}
+
+
+.articleElements > div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: gray;
+    border-radius: 100px;
+    padding: 8px 12px;
+}
+
+.articleElementsText {
+    padding: 0;
+}
+
+.articleElements > div p{
+    font-family: "Neue Montreal Regular", serif;
+    font-size: 14px;
+    padding: 13px;
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.2em;
+}*/
+
+.sectionRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 40px 40px 0px;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    max-width: 1400px;
+}
+
+.sectionRow > div {
+    width: 100%;
+    border-radius: 12px;
+    height: 420px;
+}
+
+.sectionRow > div img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.endSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    height: 50vh;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    width: 100%;
+}
+
+/*.endSectionDiv1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: min-content;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.endSectionDiv2 {
+    flex: none;
+    height: auto;
+    max-width: 660px;
+    min-width: 300px;
+    position: relative;
+    white-space: pre-wrap;
+    width: 100%;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+*/
+
+.endSection div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: min-content;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.endSection div h2 {
+    font-family: "Neue Montreal Medium", serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.2px;
+    line-height: 1.2em;
+    align-self: center;
+    color: #000000;
+    text-decoration: none;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+}
+
+.endSection div h2 a {
+    text-decoration: none; 
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.endSection div h2 a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    place-content: center space-between;
+    align-items: center;
+    width: 100%;
+    height: 17px;
+}
+
+.text {
+    font-family: "Neue Montreal Regular", serif;
+    font-size: 14px;
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.2em;
+}
+
+.textLinks {
+    font-family: "Neue Montreal Regular", serif;
+    font-size: 14px;
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.2em;
+}
+
+.textLinks a:hover {
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.footerMedias {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

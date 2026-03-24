@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            header {
+                display: flex;
+                justify-content: center;
+                padding: 30px 40px;
+            }
+
+            .navbar {
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                position: fixed;
+                border-radius: 100px;
+                background-color: #e8e5e480;
+                width: 300px;
+                gap: 4px;
+            }
+
+
+            .navbar > div {
+                padding: 10px 20px;
+                border-radius: 100px;
+                margin: 3px;
+            }
+
+            .navbar > div a {
+                text-decoration: none;
+                color: black;
+                font-family: "Neue Montreal Regular", serif;
+                font-size: 16px;
+                letter-spacing: 0px;
+                font-weight: 400;
+                line-height: 1.2em;
+                font-style: normal;
+            }
+
+            .navbar > div:hover:not(.active) {
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div><a href="page">Home</a></div>
+                <div><a href="page">Profile</a></div>
+                <div><a href="page">Contact</a></div>
+            </div>
+        </header>
+    </body>
+</html>

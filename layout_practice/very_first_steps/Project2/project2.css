@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'GT America Standard', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #191a1b;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: America;
+    src: url(GT-America-Standard-Regular-Trial.otf);
+    font-weight: normal;
+}
+
+section {
+    display: flex;
+    padding: 80px 115px;
+    background-color: #DADBF1;
+    place-content: center;
+}
+
+.section-text {
+    display: inline-block;
+    font-family: America;
+    color: black;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.topbar {
+    display: flex;
+    height: 88px;
+    background-color: black;
+    align-items: center;
+    width: 100%;
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+.topbar-inner {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1900px;
+    margin: auto;
+}
+
+.topbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-helpCenter{
+    display: inline-block;
+    padding: 2px 0 4px 0.8rem;
+    border-left: 2px solid white;
+    font-family: America;
+    color: white;
+    font-size: 24px;
+    margin: 4px 0 0 0.8rem;
+}
+
+a.topbar-helpCenter:hover{
+    text-decoration: underline;
+}
+
+.topbar-abstract{
+    font-family: America;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.topbar-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 6px 22px;
+    display: inline-block;
+    color: white;
+    line-height: 1.5;
+    font-size: 24px;
+    font-family: America;
+}
+
+.topbar-signIn {
+    background-color: #4C5FD5;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+}
+
+a.topbar-signIn:hover {
+    background-color: white;
+    color: black;
+}
+
+.topbar-submit {
+    background-color: #191a1b;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.links-list-container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+.links-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80% !important;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.links-list-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(15px *-1);
+    padding-right: calc(15px *-1);
+}
+
+.links-list-item {
+    position: relative;
+    display: flex;
+    margin-bottom: 3rem;
+    padding-right: 15px;
+    width: 50%;
+}
+
+.links-list-item-link {
+    color: #4C5FD5;
+    text-decoration: none;
+}
+
+.links-list-item-link:hover {
+    text-decoration: underline;
+}

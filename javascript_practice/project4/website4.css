@@ -1,0 +1,44 @@
+#diceConteiner {
+    text-align: center;
+}
+
+h1 {
+    font-family: Verdana;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+label {
+    font-family: verdana;
+    font-size: 25px;
+}
+
+#roll {
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    font-family: Verdana;
+    background-color: rgb(78, 78, 248);
+    color: white;
+    border-style: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#result {
+    font-family: verdana;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#diceNum {
+    border-radius: 3px;
+    border-width: 3px;
+    font-size: 20px;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#diceImage {
+    text-align: center;
+}

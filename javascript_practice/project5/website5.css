@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(220, 220, 220);
+}
+
+h1 {
+    font-family: verdana;
+    font-size: 30px;
+}
+
+#generatorConteiner {
+    text-align: center;
+    background-color: white;
+    max-width: 350px;
+    margin: auto;
+    max-height: 350px;
+    padding: 3px;
+}
+
+#result {
+    margin: 18px 0px 0px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+#generateBtn {
+    padding: 8px 13px 8px 13px;
+    font-size: 12px;
+    font-family: verdana;
+    margin: 13px 0px;
+}

@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+h1 {
+    color: rgb(24, 119, 227);
+}
+
+form {
+    background-color: white;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+}
+
+#convert {
+    padding: 15px 20px 15px 20px;
+    margin: 40px 0px 5px 0px;
+    font-size: 17px;
+    background-color: red;
+    border-style: none;
+    color: white;
+}
+
+#temp {
+    margin: 15px 0px 20px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#text {
+    font-size: 20px;
+}
+
+#label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#toFarenheight {
+    margin: 5px 0px 20px 0px;
+}
+
+#toCelsius {
+    margin: 10px 0px 0px 0px;
+}
+
+#convTemp {
+    font-size: 1.75em;
+    font-weight: bold;
+}
