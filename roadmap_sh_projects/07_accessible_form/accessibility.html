@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessibile Form UI</title>
+<link rel="stylesheet" href="accessibility.css">
+</head>
+<body>
+<div class="form-conteiner">
+<form>
+<div class="form-section">
+<label for="full-name">Full name:</label>
+<input type="text" name="full-name" id="full-name" placeholder="What should we call you?">
+</div>
+<div class="form-section">
+<label for="email">Email:</label>
+<input type="email" name="email" id="email" placeholder="Enter your email" value="John@doe.com" class="error">
+<p id="error-message">email is already taken</p>
+</div>
+<div class="form-section">
+<label for="enter-password">Enter Password:</label>
+<input type="password" name="enter-password" id="enter-password" placeholder="xxxxxxxx">
+<button class="show-password" aria-label="Show the password that you have just entered">
+ <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="15" height="15">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+</button>
+</div>
+<div class="form-section">
+<label for="confirm-password">Confirm Password:</label>
+<input type="password" name="confirm-password" id="confirm-password" placeholder="xxxxxxxx">
+<button class="show-password" aria-label="Show the password that you have just entered">
+ <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="15" height="15">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+</button>
+</div>
+<button type="submit" class="update-profile">Update Profile</button>
+</form>
+<div class="form-progress-conteiner">
+<div class="progress-bar-conteiner">
+<span class="progress-bar"></span>
+<p id="progress">65%</p>
+</div>
+<h2>Profile Completeness</h2>
+<div class="progress-checklist">
+<ul>
+<li class="checklist-completed">Create Account</li>
+<li class="checklist-completed">Update Roadmap Progress</li>
+<li class="checklist-completed">Setup Public Profile</li>
+<li>Complete your first project</li>
+<li>Invite your Friends</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

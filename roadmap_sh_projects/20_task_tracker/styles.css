@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--item-font: 1.2rem arial;
+}
+
+.tracker-conteiner {
+    max-width: 800px;
+    margin: 30px auto;
+	padding: 30px;
+	border: 2px solid black;
+	border-radius: 16px;
+}
+
+.task-list {
+list-style-type: none;
+font: var(--item-font);
+}
+
+.task-item {
+display: flex;
+gap: 30px;
+align-items: center;
+padding: 10px 16px;
+max-width: 60%;
+border-bottom: 1px solid black;
+}
+
+.completed {
+color: red;
+}

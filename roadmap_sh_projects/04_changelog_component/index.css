@@ -1,0 +1,72 @@
+* {
+margin: 0;
+box-sizing: border-box;
+}
+
+.changelog-conteiner {
+display: flex;
+flex-direction: column;
+border: 2px solid;
+border-radius: 20px;
+width: 50vw;
+margin: auto;
+}
+
+.headtext {
+text-align: center;
+padding: 3vw;
+font-family: verdana;
+font-size: 16px;
+}
+
+.change-roadmap {
+display: flex;
+flex-direction: column;
+}
+
+.roadmap-item {
+display: grid;
+grid-template-columns: 46% 50%;
+}
+
+.date {
+text-align: right;
+padding: 1.5vw 30px;
+color: gray;
+font-family: verdana;
+font-size: 16px;
+}
+
+.change {
+border-left: 2px solid;
+padding: 1.5vw 12px;
+font-family: verdana;
+font-size: 16px;
+}
+
+.link-conteiner{
+text-align: center;
+padding: 2vw;
+}
+
+.link {
+display: inline-block;
+padding: 0.7rem;
+background-color: black;
+color: white;
+text-decoration: none;
+border-radius: 10px;
+font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+ .changelog-conteiner {
+    width: 70vw;
+ }   
+}
+
+@media screen and (max-width: 600px) {
+ .changelog-conteiner {
+    width: 90vw;
+ }   
+}

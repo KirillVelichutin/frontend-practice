@@ -1,0 +1,241 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.topbar {
+	padding: 0;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	background-color: #252525;
+}
+
+
+.text-style {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #252525;
+}
+
+.links-style {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	color: #252525;
+}
+
+.links-hover{
+	color: #aeaeae;
+	text-decoration: underline;
+}
+
+.navbar {
+	margin: 0 10px;
+}
+
+.navbar li {
+	list-style: none;
+    float: left;
+	border-style: solid;
+    border-width: 0px 1px 0px 0px;
+	border-color: #ffffff;
+}
+
+.navbar li:last-child {
+    border: none;
+}
+
+.navbar li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #ffffff;
+}
+
+.navbar li a:hover {
+	text-decoration: underline;
+	background-color: #ffffff;
+	color: #252525;
+}
+
+.logo {
+    width: 4rem;
+}
+
+img {
+	border: 1px solid;
+}
+
+.name {
+    display: inline-block;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+	padding: 5px 1.3rem;
+}
+
+.headtext {
+	font-size: 1.4rem;
+	padding: 5vw;
+    text-align: center;
+	background-color: #e9e6e7;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.projects {
+	list-style-type: none;
+	padding: 0;
+}
+
+.projects li a {
+	display: block;
+	padding: 1vw 1.5vw;
+	text-decoration: none;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 570;
+	color: #252525;
+}
+
+.projects li a:hover {
+	text-decoration: underline;
+	background-color: #252525;
+	color: #cfcfcf;
+}
+
+.projects li {
+	border-bottom: 2px solid;
+}
+
+.projects li:last-child {
+	border-bottom: none;
+}
+
+main {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+main > section {
+	border-style: solid;
+	border-width: 2px 2px 2px 0;
+	background-color: #cfcfcf;
+}
+
+main > section > h2 {
+	font-size: 1.4rem;
+	padding: 1vw;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #e9e6e7;
+	background-color: #545454;
+}
+
+.education {
+	border-right: none;
+}
+
+.education-record > * {
+	margin: 0.5vw 1.5vw;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #252525;
+}
+
+.signature{
+	margin-top: 2vw;
+	color: gray;
+}
+
+.courses li {
+	margin: 0.3vw 0;
+}
+
+aside {
+	grid-column: 1 / span 3;
+	padding: 1vw;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #252525;
+	background-color: #e9e6e7;
+}
+
+.reviews-section {
+	display: flex;
+	justify-content: space-around;
+	padding: 2vw;
+}
+
+.reviews-section > div {
+	border: 2px solid;
+	border-radius: 8px;
+	margin: 1rem;
+	padding: 1rem;
+	background-color: #cfcfcf;
+}
+
+
+.reviews-section > div > p:last-of-type {
+	margin-top: 1.5vw;
+	color: #7d7d7d;
+}
+
+footer {
+	text-align: center;
+	background-color: #252525;
+	color: #ffffff;
+}
+
+.experience-section > div {
+	padding: 1.3vw 1.8vw;
+}
+
+.experience-section > div:last-of-type {
+	border-top: 1px solid;
+}
+
+.experience-record > * {
+	margin: 0.7vw 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #252525;
+}
+
+.experience-record > a {
+	text-decoration: none;
+	color: #252525;
+	font-family:'Courier New', Courier, monospace;
+	font-weight: bold;
+}
+
+.experience-record > a:hover {
+	color: #aeaeae;
+	text-decoration: underline;
+	background-color: #252525;
+}
+
+@media only screen and (max-width: 600px) {
+	.topbar {flex-direction: column;}
+	.logo-name {flex-direction: column;}
+
+	.navbar {justify-items: center; padding: 3vw;}
+
+	main {display: flex; flex-direction: column;}
+	main > section {border-width: 2px 0 0 0;}
+	main > section > h2 {padding: 2.3vw;text-align: center; border-bottom: 2px solid;}
+	main > section:last-of-type > h2 {border-bottom: 0;}
+	aside > h2 {text-align: center;}
+
+	.logo {width: 10vw;}
+	.headtext {padding-bottom: 7vw;}
+	.projects {text-align: center; background-color: #cfcfcf;}
+	.projects li a {padding: 2vw;}
+	.experience-record {background-color: #cfcfcf;}
+	.experience-record > * {margin: 2vw;}
+	.education {border-width: 2px 0;}
+	.education-record > * {margin: 3vw 6vw;}
+	.reviews-section {flex-direction: column;}
+}

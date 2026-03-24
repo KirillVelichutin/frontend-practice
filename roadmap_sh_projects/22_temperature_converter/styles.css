@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.converter-conteiner {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+form {
+    margin: 30px 0;
+}
+
+#temperature-input{
+    padding: 10px 15px;
+    border: 1px gray solid;
+    border-radius: 30px;
+}
+
+.unit-input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+}
+
+#convert-btn {
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: 2px black solid;
+    border-radius: 30px;
+}
+
+#convert-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#convert-btn:disabled {
+    background-color: lightgray;
+    color: white;
+    border: 2px black dotted;
+}

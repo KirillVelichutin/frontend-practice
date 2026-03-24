@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards-conteiner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 700px;
+    margin: 18px auto;
+}
+
+.top-right {
+    display: flex;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top-right-comment {
+    font-family: arial;
+    font-weight: bold;
+    margin-bottom: 2.4vw;
+    min-width: 250px;
+}
+
+.photo {
+    width: 70px;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+
+.top-left {
+    position: relative;
+    padding: 13px;
+}
+
+.top-left-comment {
+    position: absolute;
+    top: 35px;
+    max-width: 300px;
+    left: 35px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.Jackie {
+    grid-column: 1 / span 2;
+    display: flex;
+    margin: 3vw 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Jackie-photo {
+    height: 235px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.Jackie-comment-conteiner {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    border-radius: 30px;
+    padding: 20px;
+    height: 100%;
+}
+
+.Jackie-comment-conteiner > * {
+    margin: 10px;
+}
+
+.stars {
+    width: 130px;
+}
+
+.carusel {
+    grid-column: 1 / span 2;
+    border: 2px solid;
+    border-radius: 30px;
+    text-align: center;
+    padding: 3vw;
+}
+
+.carusel-photo {
+    width: 40px;
+    border-radius: 30px;
+    margin: 15px;
+    opacity: 0.5;
+}
+
+.carusel-photo-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carusel-comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    opacity: 1;
+}
+
+.bubble {
+    width: 100%;
+    height: 190px;
+}
+
+.commented-by {
+    display: flex;
+    align-items: center;
+}

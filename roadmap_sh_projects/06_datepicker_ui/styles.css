@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.datepicker {
+    position: relative;
+    margin: 40px;
+    display: inline-block;
+}
+
+.date-input {
+    display: flex;
+    align-items: center;
+    border: 2px solid;
+    width: 210px;
+    padding: 5px;
+}
+
+.date-input input {
+    background-color: none;
+    border: none;
+    padding: 5px;
+}
+
+.date-input button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.datepicker-icon {
+    width: 25px;
+}
+
+.calendar {
+    top: 50px;
+    left: 0;
+    position: absolute;
+    border: 2px solid;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.calendar-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 2px solid;
+}
+
+.month-picker {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.month-picker button {
+    padding: 5px
+}
+
+.weekday {
+    display: flex;
+    justify-content: space-around;
+}
+
+.weekday span {
+    width: 35px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.days span {
+    width: 35px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.days span:hover {
+    background-color: gray;
+}
