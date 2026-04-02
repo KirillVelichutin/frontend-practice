@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: 100vh;
+}
+
+.app-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.navbar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    transition: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    padding: 20px 0.7rem;
+    border-radius: 10px;
+    white-space: nowrap;
+    transition: none;
+}
+
+.nav-svg {
+    flex-shrink: 0;
+}
+
+.navbar span {
+    opacity: 0;
+    transform: translateX(-16px);
+    overflow: hidden;
+    transition: none;
+}
+
+.navbar-avatar-conteiner {
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.navbar-avatar {
+    display: block;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navbar:hover {
+    width: 100%;
+    transition: width 250ms ease;
+}
+
+.nav-item:hover {
+    background-color: hsl(0, 0%, 93%);
+    transition: background-color 400ms;
+}
+
+.navbar:hover span {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 250ms ease, transform 250ms ease;
+}
+
+.app-main {
+    display: flex;
+    justify-content: center;
+}
+
+.app-content {
+    width: 40vw;
+    min-width: 320px;
+    max-width: 760px;
+}
+
+.user-info-panel {
+    margin-top: 2.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.avatar-conteiner {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.avatar {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-info {
+    margin-left: 1.7rem;
+    font-size: 0.9rem;
+}
+
+.user-info > * {
+    margin-bottom: 0.3rem;
+}
+
+.username {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.user-stats {
+    display: flex;
+}
+
+.user-stats p {
+    margin-right: 1.2rem;
+}
+
+.profile-caption {
+    margin-top: 1rem;
+}
+
+.feed-conteiner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0 2rem;
+}
+
+.feed-post {
+    width: 100%;
+    max-width: 470px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.feed-post-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.feed-post-body {
+    padding: 0.9rem 1rem 1rem;
+}
+
+.feed-post h3 {
+    margin: 0.5rem 1.5rem;
+    font-size: 1rem;
+}
+
+.feed-post-body p {
+    margin-bottom: 0.5rem;
+}
